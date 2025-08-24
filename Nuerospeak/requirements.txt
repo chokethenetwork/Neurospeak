@@ -1,0 +1,21 @@
+
+# requirements.py
+# Auto-generated dependency installer for Neuroprompting Streamlit Prototype
+
+import subprocess
+import sys
+
+packages = [
+    "streamlit>=1.29.0",
+    "numpy>=1.26.0",
+    "pandas>=2.2.0",
+    "scipy>=1.11.0",
+    "altair>=5.0.0",
+    "pydub>=0.25.0",
+    "openai>=1.32.0"
+]
+
+for package in packages:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+print("All dependencies installed successfully.")
